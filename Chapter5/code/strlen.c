@@ -17,12 +17,6 @@ size_t strlen_v2(const char *s)
         p++;
     return (size_t)(p - s);
 }
-size_t strlen_v3(const char *s)
-{
-    char *p = s;
-    while (*p++);
-    return (size_t)(p - s);
-}
 int main(void)
 {
     char *s = "Hello"; // 5

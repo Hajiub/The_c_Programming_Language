@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /* strcpy: copy t to s; array subscript version */
 void strcpy(char *from, char *to)
 {

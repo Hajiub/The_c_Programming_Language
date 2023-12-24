@@ -16,7 +16,7 @@ filename=$(basename "$1")
 exe_file="${filename%.*}"
 
 echo "Compiling $1..."
-cc "$1" -o "bin/$exe_file" -lm
+cc -Wextra -Wall "$1" -o "bin/$exe_file" -lm
 
 if [ $? -eq 0 ]; then
     echo "Compilation successful."
