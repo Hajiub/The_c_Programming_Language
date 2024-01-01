@@ -1,32 +1,21 @@
+/*
+    Exercise 1-20. Write a program detab that replaces tabs in the input with the proper number
+    of blanks to space to the next tab stop. Assume a fixed set of tab stops, say every n columns.
+    Should n be a variable or a symbolic parameter?
+*/
 #include <stdio.h>
 
-#define TAB_WIDTH 4  
+#define TAB_WIDTH 4
 
-int main()
-{
+int main() {
     int c;
-    int charCount = 0;
-
-    while ((c = getchar()) != EOF)
-    {
-        if (c == '\t')
-        {
-            int spacesToNextTabStop = TAB_WIDTH - (charCount % TAB_WIDTH);
-            for (int i = 0; i < spacesToNextTabStop; i++)
-            {
+    while ((c = getchar()) != EOF) {
+        if (c == '\t') {
+            for (int i = 0; i < TAB_WIDTH; ++i) {
                 putchar(' ');
-                charCount++;
             }
-        }
-        else if (c == '\n')
-        {
+        } else {
             putchar(c);
-            charCount = 0;  
-        }
-        else
-        {
-            putchar(c);
-            charCount++;
         }
     }
 
