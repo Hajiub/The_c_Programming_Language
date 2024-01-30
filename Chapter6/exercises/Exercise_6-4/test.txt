@@ -1,0 +1,4 @@
+Hello, this is a sample document.
+It contains some words, and each word is on a different line.
+The program should analyze this document and create a cross-reference list.
+Exclude common words like "this," "is," "and," etc.
