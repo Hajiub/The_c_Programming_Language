@@ -1,0 +1,7 @@
+Write a program to compare two files, printing the first line where they differ.
+
+
+Step 1: open the two files 
+Step 3: go throw the two files line by line using fgets  and compare each word to the other using strcmp
+if they equal continue
+else break and print the line
